@@ -1,6 +1,8 @@
+import logging
+
 import requests
 
-from infer import logger
+logger = logging.getLogger(__name__)
 
 
 def download_file(url, max_size_bytes, output_filename, api_key=None):
