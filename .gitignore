@@ -2,3 +2,5 @@ package.json
 package-lock.json
 
 node_modules
+/my_secrets.py
+/.idea/
