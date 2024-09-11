@@ -9,7 +9,7 @@ import torch
 
 from util import download_file
 
-MODEL_NAME = "ivrit-ai/faster-whisper-v2-d3-e3"
+MODEL_NAME = "ivrit-ai/faster-whisper-v2-d4"
 
 logger = logging.getLogger(__name__)
 
@@ -31,6 +31,7 @@ def mmss(seconds: float):
 
 
 def transcribe(job):
+    logger.info("hit")
     if "input" not in job:
         return {"error": "missing input in job"}
 
